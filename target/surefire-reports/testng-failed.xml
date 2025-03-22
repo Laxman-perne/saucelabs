@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Default suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="browser" value="chrome"/>
+  <test parallel="tests" name="Chrome test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.saucelabs.SauceLabsAutomationTests">
+        <methods>
+          <include name="LaunchBrowser"/>
+          <include name="LonginintoSauceLabs"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.saucelabs.SauceLabsAutomationTests -->
+    </classes>
+  </test> <!-- Chrome test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
